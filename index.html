@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	
+
+  <h1>JavaScript Examples</h1>
+
+  <h2>Example 1: Change Picture on Button Click</h2>
+  <button onclick="changeImage()">Click me to change the picture</button>
+  <img id="image1" src="assets/img1.jpg" alt="Image" width="300" height="200">
+
+  <h2>Example 2: Display Current Time</h2>
+  <p id="currentTime"></p>
+
+  <h2>Example 3: Toggle Text on Button Click</h2>
+  <button onclick="toggleText()">Toggle Text</button>
+  <p id="toggleText">Hello, World!</p>
+
+  <h2>Example 4: Change Background Color on Button Click</h2>
+  <button onclick="changeColor()">Change Background Color</button>
+
+  <h2>Example 5: Show/Hide an Element</h2>
+  <button onclick="toggleElement()">Show/Hide Text</button>
+  <p id="toggleElement" style="display:none">This is some text.</p>
+
+  <h2>Example 6: Update Text on Button Click</h2>
+  <button onclick="updateText()">Click to Update Text</button>
+  <p id="updateText">Original Text</p>
+
+  <h2>Example 7: Calculate and Display Sum</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="sumResult"></p>
+
+  <h2>Example 8: Change Text Color on Mouse Over</h2>
+  <p id="mouseoverText" onmouseover="changeTextColor()" onmouseout="resetTextColor()">Hover over this text to change its color.</p>
+
+  <h2>Example 9: Alert Box on Button Click</h2>
+  <button onclick="showAlert()">Click me</button>
+
+  <h2>Example 10: Display Random Number</h2>
+  <button onclick="displayRandomNumber()">Generate Random Number</button>
+  <p id="randomNumber"></p>
+
+  <h2>Example 11: Change Text Content on Double Click</h2>
+  <p id="dblclickText" ondblclick="changeText()">Double-click this text to change it.</p>
+
+  <h2>Example 12: Count Button Clicks</h2>
+  <button onclick="countClicks()">Click me</button>
+  <p id="clickCount">Clicks: 0</p>
+
+  <h2>Example 13: Display Length of Text Input</h2>
+  <input type="text" id="textInput" onkeyup="displayLength()">
+  <p id="textLength">Length: 0</p>
+
+  <h2>Example 14: Convert Temperature from Celsius to Fahrenheit</h2>
+  <input type="number" id="celsius" placeholder="Enter Celsius">
+  <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+  <p id="fahrenheit"></p>
+
+  <h2>Example 15: Reverse a String</h2>
+  <input type="text" id="stringInput" placeholder="Enter a string">
+  <button onclick="reverseString()">Reverse String</button>
+  <p id="reversedString"></p>
+
+  <h2>Example 16: Calculate Factorial of a Number</h2>
+  <input type="number" id="factorialInput" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+  <p id="factorialResult"></p>
+
+  <h2>Example 17: Change Font Size on Button Click</h2>
+  <button onclick="changeFontSize()">Change Font Size</button>
+  <p id="fontText">This text will change size.</p>
+
+  <h2>Example 18: Validate Email Format</h2>
+  <input type="text" id="emailInput" placeholder="Enter your email">
+  <button onclick="validateEmail()">Validate Email</button>
+  <p id="emailResult"></p>
+
+  <h2>Example 19: Change Text on Key Press</h2>
+  <input type="text" id="keyInput" onkeyup="displayKey()">
+  <p id="keyOutput">Press any key...</p>
+
+  <h2>Example 20: Count Words in Text Area</h2>
+  <textarea id="textArea" onkeyup="countWords()" rows="4" cols="50" placeholder="Type some text..."></textarea>
+  <p id="wordCount">
+
+  <h2>Example 21: Display Current Date</h2>
+  <button onclick="displayDate()">Show Current Date</button>
+  <p id="currentDate"></p>
+
+  <h2>Example 22: Change Background Color Based on Time of Day</h2>
+  <p>The background color changes based on the time of day.</p>
+
+  <h2>Example 23: Check if a Number is Even or Odd</h2>
+  <input type="number" id="numberInput" placeholder="Enter a number">
+  <button onclick="checkEvenOdd()">Check Even or Odd</button>
+  <p id="evenOddResult"></p>
+
+  <h2>Example 24: Convert Text to Uppercase</h2>
+  <input type="text" id="uppercaseInput" placeholder="Enter text">
+  <button onclick="convertToUppercase()">Convert to Uppercase</button>
+  <p id="uppercaseResult"></p>
+
+  <h2>Example 25: Convert Text to Lowercase</h2>
+  <input type="text" id="lowercaseInput" placeholder="Enter text">
+  <button onclick="convertToLowercase()">Convert to Lowercase</button>
+  <p id="lowercaseResult"></p>
+
+  <h2>Example 26: Calculate Area of a Circle</h2>
+  <input type="number" id="radiusInput" placeholder="Enter radius">
+  <button onclick="calculateCircleArea()">Calculate Area</button>
+  <p id="circleArea"></p>
+
+  <h2>Example 27: Change Text Color on Button Click</h2>
+  <button onclick="changeTextColor()">Change Text Color</button>
+  <p id="colorText">This text will change color.</p>
+
+  <h2>Example 28: Display Alert on Form Submission</h2>
+  <form onsubmit="displayFormAlert(event)">
+    <input type="text" id="formInput" placeholder="Enter text">
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Example 29: Disable Button After Click</h2>
+  <button id="disableButton" onclick="disableButton()">Click to Disable</button>
+
+  <h2>Example 30: Display User's Age</h2>
+  <input type="number" id="birthYear" placeholder="Enter your birth year">
+  <button onclick="displayAge()">Display Age</button>
+  <p id="ageDisplay"></p>
+
+  <h2>Example 31: Change Background Color on Mouse Over</h2>
+  <p id="mouseOverText" onmouseover="changeBackgroundColor()" onmouseout="resetBackgroundColor()">Hover over this text to change background color.</p>
+
+  <h2>Example 32: Display Current Month</h2>
+  <button onclick="displayMonth()">Show Current Month</button>
+  <p id="currentMonth"></p>
+
+  <h2>Example 33: Calculate Square of a Number</h2>
+  <input type="number" id="squareInput" placeholder="Enter a number">
+  <button onclick="calculateSquare()">Calculate Square</button>
+  <p id="squareResult"></p>
+
+  <h2>Example 34: Greet User Based on Time of Day</h2>
+  <button onclick="greetUser()">Greet Me</button>
+  <p id="greeting"></p>
+
+  <h2>Example 35: Display Random Quote</h2>
+  <button onclick="displayQuote()">Show Random Quote</button>
+  <p id="randomQuote"></p>
+
+  <h2>Example 36: Change Font Style on Button Click</h2>
+  <button onclick="changeFontStyle()">Change Font Style</button>
+  <p id="fontStyleText">This text will change font style.</p>
+
+  <h2>Example 37: Toggle Background Color</h2>
+  <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+
+  <h2>Example 38: Show Alert with Input Value</h2>
+  <input type="text" id="alertInput" placeholder="Enter something">
+  <button onclick="showAlertWithInput()">Show Alert</button>
+
+  <h2>Example 39: Calculate and Display Square Root</h2>
+  <input type="number" id="sqrtInput" placeholder="Enter a number">
+  <button onclick="calculateSqrt()">Calculate Square Root</button>
+  <p id="sqrtResult"></p>
+
+  <h2>Example 40: Change Text Alignment</h2>
+  <button onclick="changeTextAlignment()">Change Text Alignment</button>
+  <p id="alignmentText">This text will change alignment.</p>
+
+  <h2>Example 41: Highlight Text on Button Click</h2>
+  <button onclick="highlightText()">Highlight Text</button>
+  <p id="highlightedText">This text will be highlighted.</p>
+
+  <h2>Example 42: Display Current Day of the Week</h2>
+  <button onclick="displayDay()">Show Current Day</button>
+  <p id="currentDay"></p>
+
+  <h2>Example 43: Display Countdown Timer</h2>
+  <input type="number" id="countdownInput" placeholder="Enter seconds">
+  <button onclick="startCountdown()">Start Countdown</button>
+  <p id="countdownTimer"></p>
+
+  <h2>Example 44: Create and Display List from Array</h2>
+  <button onclick="displayList()">Display List</button>
+  <ul id="listDisplay"></ul>
+
+  <h2>Example 45: Change Paragraph Text on Button Click</h2>
+  <button onclick="changeParagraphText()">Change Paragraph Text</button>
+  <p id="paragraphText">Original paragraph text.</p>
+
+  <h2>Example 46: Display Random Color</h2>
+  <button onclick="displayRandomColor()">Show Random Color</button>
+  <p id="randomColor"></p>
+
+  <h2>Example 47: Generate Random Password</h2>
+  <button onclick="generatePassword()">Generate Password</button>
+  <p id="password"></p>
+
+  <h2>Example 48: Display Text with Typing Effect</h2>
+  <button onclick="startTypingEffect()">Start Typing Effect</button>
+  <p id="typingText"></p>
+
+  <h2>Example 49: Display Character Count of Text Input</h2>
+  <input type="text" id="charCountInput" placeholder="Enter text">
+  <p id="charCount">Character Count: 0</p>
+
+  <h2>Example 50: Display Fibonacci Sequence</h2>
+  <input type="number" id="fibonacciInput" placeholder="Enter number of terms">
+  <button onclick="displayFibonacci()">Display Fibonacci</button>
+  
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
